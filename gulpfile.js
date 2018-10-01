@@ -10,7 +10,7 @@ gulp.task('sass', function () {
     .pipe(plumber())
     .pipe(autoprefixer({
         browsers: ['last 4 versions'],
-        cascade: true
+        cascade: false
     }))
     .pipe(sass.sync().on('error', sass.logError))
     .pipe(gulp.dest('./css'));
