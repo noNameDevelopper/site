@@ -11,10 +11,10 @@ html, body {
   min-height: 100%; }
 
 body {
-  font-family: var(--textFont, blue);
+  font-family: var(--textFont, #11073B);
   font-size: 16px;
   line-height: 1.45;
-  color: var(--textColor); }
+  color: var(--textColor, #fff); }
 
 h1, h2, h3, h4, h5, h6, .title {
   font-weight: 700;
@@ -44,3 +44,12 @@ h6 {
   max-width: var(--mainWidth) px;
   padding: 0 var(--gutter) px;
   margin: 0 auto; }
+
+.mobile {
+  width: 100%;
+  max-width: 750px;
+  margin: 20% auto;
+  box-shadow: 0px 0px 10px #aaa; }
+
+.home .navigation ul li a {
+  text-align: center; }

@@ -6,7 +6,7 @@ var plumber = require('gulp-plumber');
 var autoprefixer = require('gulp-autoprefixer');
  
 gulp.task('sass', function () {
-  return gulp.src('./sass/**/*.scss')
+  return gulp.src('./sass/**/**/s*.scss')
     .pipe(plumber())
     .pipe(autoprefixer({
         browsers: ['last 4 versions'],
